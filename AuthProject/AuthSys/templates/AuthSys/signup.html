@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up </title>
+</head>
+<body>
+  		<h2>Lets Join with us by signup</h2>
+  		<form method="POST">
+			{% csrf_token %}
+			{{ form.as_p }}
+
+			<button type="submit">Sign up</button>
+  			
+  		</form>
+  			
+</body>
+</html>
